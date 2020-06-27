@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/cpf"
+        android:textColor="#00BCD4"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:ems="20"
+        android:textSize="25sp"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#00BCD4"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:textColor="#00BCD4"
+        android:text="@string/datanascimento" />
+
+    <EditText
+        android:id="@+id/datadatanascimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:ems="10"
+        android:textSize="25sp"
+        android:textColor="#00BCD4"
+        android:backgroundTint="#00BCD4"
+        android:inputType="date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:textColor="#00BCD4"
+        android:text="@string/rendamensal" />
+
+    <EditText
+        android:id="@+id/rendamensal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="5"
+        android:layout_marginTop="290dp"
+        android:ems="10"
+        android:textColor="#00BCD4"
+        android:backgroundTint="#00BCD4"
+        android:textSize="25sp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#00BCD4"
+        android:onClick="validar"
+        android:text="@string/salvar"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:backgroundTint="#00BCD4"
+        android:onClick="sair"
+        android:text="@string/Sair"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
