@@ -67,6 +67,7 @@ public class Pessoa{
         Calendar today = Calendar.getInstance();
 
         // estrai ano, mes, dia
+        // mais 1 nos meses é devido eles  serem indexados a partir de 0, Janeiro, e Dezembro, 11.
         int ano = today.get(Calendar.YEAR);
         int mesInt = dateOfBirth.get(Calendar.MONDAY) + 1;
         int diaInt  = dateOfBirth.get(Calendar.DAY_OF_MONTH) + 20;
