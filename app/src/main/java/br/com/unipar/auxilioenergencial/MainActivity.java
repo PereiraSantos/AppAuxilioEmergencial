@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Variaveis globais
     private EditText cpfText, dataNascimentoText, rendaMensalText;
-    private String msg;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
         if(cpfText.getText().toString().equals("")){
             menssage("Campo Cpf Vazio!");
         }
-        if(dataNascimentoText.getText().toString().equals("")){
+        else if(dataNascimentoText.getText().toString().equals("")){
             menssage("Campo data Nascimento esta Vazio!");
         }
-        if(rendaMensalText.getText().toString().equals("")) {
+        else if(rendaMensalText.getText().toString().equals("")) {
             menssage("Campo renda Mensal esta Vazio!");
         }else {
 
